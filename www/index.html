@@ -192,7 +192,11 @@
 
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
+     if(active==true){
       active=false;
+     }else{
+      active=true;
+     }
         
         
     }
@@ -235,9 +239,9 @@
 
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>
-    <button id="btnA">ButtonA</button>  
-    <button id="btnB">ButtonB</button>  
-    <button id="btnC">ButtonC</button>  
+    <button id="btnA">開始</button>  
+    <button id="btnB">停止</button>  
+    <button id="btnC">時間設定</button>  
     <input type="number" id="minute" value=3 >
     <input type="number" id="second" value=0 >
 </body>
